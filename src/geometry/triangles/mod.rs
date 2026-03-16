@@ -18,7 +18,7 @@ impl Triangle {
             side3: side3
         }
     }
-    
+
     pub fn check(&self) -> bool {
         if  self.side1 + self.side2 >= self.side3 ||
             self.side2 + self.side3 >= self.side1 ||

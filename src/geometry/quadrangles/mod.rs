@@ -23,15 +23,21 @@ impl Quadrangle {
         }
     }
 
-    pub fn check() -> bool {
-        todo!()
+    pub fn check(&self) -> bool {
+        if self.angle1 + self.angle2 + self.angle3 + self.angle4 != 360 as f64 ||
+            self.side1 >= self.side2 + self.side3 + self.side4 ||
+            self.side2 >= self.side1 + self.side3 + self.side4 ||
+            self.side3 >= self.side1 + self.side2 + self.side4 ||
+            self.side4 >= self.side1 + self.side2 + self.side3 {
+                false
+        } else {true}
     }
 
     pub fn area() -> f64 {
         todo!()
     }
 
-    pub fn perimeter() -> f64 {
-        todo!()
+    pub fn perimeter(&self) -> f64 {
+        self.side1 + self.side2 + self.side3 + self.side4
     }
 }
