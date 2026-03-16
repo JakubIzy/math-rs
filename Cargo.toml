@@ -1,0 +1,10 @@
+[package]
+name = "math-rs"
+version = "0.1.0"
+edition = "2024"
+authors = ["Jakub Iżykowski <jakubizykowski@proton.me>"]
+description = "Library containing mathematical functions."
+keywords = ["math", "mathematics", "science"]
+categories = ["mathematics"]
+
+[dependencies]
